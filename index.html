@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <video id="video"></video>
-    <canvas id="canvas"></canvas>
-    <button id="capture">Capturar</button>
-
-    <button onclick="Flipar()">Flip Câmera</button>
-    <button onclick="Flipar2()">Flip Câmera 2</button>
+    <div id="Input">
+      <video id="video" autoplay></video>
+      <canvas id="canvas"></canvas>
+      <button onclick="switchCamera()">Alternar Câmera</button>
+      <input type="text" id="Title" placeholder="Titulo da Reclamação" />
+      <textarea
+        id="description"
+        placeholder="Descrição da Reclamação"
+      ></textarea>
+      <button id="capture">Salvar</button>
+    </div>
+    <div id="Conteudo"></div>
   </body>
   <script src="script.js"></script>
 </html>

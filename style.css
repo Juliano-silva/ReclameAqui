@@ -7,3 +7,31 @@ body{
     background-color: #252525;
     color: white;
 }
+
+video{
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 50vh;
+    margin-top: 2vh;
+}
+
+input,textarea{
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+button{
+    all: unset;
+    display: block;
+    margin: auto;
+    background-color: #1f1b1b;
+    color: yellow;
+    padding: 3vh;
+    margin-top: 2vh;
+    cursor: pointer;
+    width: 20vh;
+    text-align: center;
+}
