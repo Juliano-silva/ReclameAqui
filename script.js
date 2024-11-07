@@ -1,6 +1,7 @@
 navigator.mediaDevices.getUserMedia({
     video: {
-        facingMode: "user" // Para a câmera frontal
+        facingMode: { exact: "environment" } // Para a câmera Traseira
+        // facingMode: "user" // Para a câmera Frontal
     }
 }).then(function (mediaStream) {
     const video = document.querySelector('#video');
