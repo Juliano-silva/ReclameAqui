@@ -11,9 +11,10 @@ body{
 video{
     display: block;
     margin: auto;
-    width: 100%;
-    height: 50vh;
+    width: 80%;
+    height: 80vh;
     margin-top: 2vh;
+    border: 0.2vh solid white;
 }
 
 input,textarea{
@@ -32,5 +33,15 @@ button{
     margin-top: 2vh;
     cursor: pointer;
     width: 20vh;
+    text-align: center;
+}
+
+#Conteudo > div{
+    border: 0.4vh solid white;
+    background-color: #252525;
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+    width: 80%;
     text-align: center;
 }
