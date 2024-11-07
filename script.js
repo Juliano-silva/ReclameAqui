@@ -1,13 +1,27 @@
-navigator.mediaDevices.getUserMedia({
-    video: {
-        facingMode: { exact: "environment" } // Para a câmera Traseira
-        // facingMode: "user" // Para a câmera Frontal
-    }
-}).then(function (mediaStream) {
-    const video = document.querySelector('#video');
-    video.srcObject = mediaStream;
-    video.play();
-});
+function Flipar(){
+    navigator.mediaDevices.getUserMedia({
+        video: {
+            facingMode: { exact: "environment" } // Para a câmera Traseira
+            // facingMode: "user" // Para a câmera Frontal
+        }
+    }).then(function (mediaStream) {
+        const video = document.querySelector('#video');
+        video.srcObject = mediaStream;
+        video.play();
+    });
+}
+
+function Flipar2(){
+    navigator.mediaDevices.getUserMedia({
+        video: {
+            facingMode: "user" // Para a câmera Frontal
+        }
+    }).then(function (mediaStream) {
+        const video = document.querySelector('#video');
+        video.srcObject = mediaStream;
+        video.play();
+    });
+}
 
 document.querySelector('#capture').addEventListener('click', function (e) {
     var canvas = document.querySelector("#canvas");  
