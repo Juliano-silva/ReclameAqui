@@ -1,4 +1,8 @@
-navigator.mediaDevices.getUserMedia({video: true}).then(function (mediaStream) {
+navigator.mediaDevices.getUserMedia({
+    video: {
+        facingMode: "user" // Para a câmera frontal
+    }
+}).then(function (mediaStream) {
     const video = document.querySelector('#video');
     video.srcObject = mediaStream;
     video.play();
