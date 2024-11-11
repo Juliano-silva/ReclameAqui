@@ -34,14 +34,44 @@ button{
     cursor: pointer;
     width: 20vh;
     text-align: center;
+    font-size: 2vh;
+    border-radius: 20%;
 }
 
 #Conteudo > div{
     border: 0.4vh solid white;
-    background-color: #252525;
+    background-color: #272222;
     display: block;
     margin: auto;
     margin-top: 2vh;
     width: 80%;
     text-align: center;
+    font-size: 2vh;
+}
+
+#Conteudo > div > img{
+    width: 60%;
+    height: 60vh;
+    margin-top: 2vh;
+    border: 0.4vh solid snow;
+}
+
+input,textarea{
+    all: unset;
+    display: block;
+    margin: auto;
+    border: 0.2vh solid white;
+    margin-top: 2vh;
+    padding: 2vh;
+    width: 80%;
+    text-align: center;
+    font-size: 2vh;
+}
+
+textarea{
+    height: 20vh;
+}
+
+:is(input,textarea)::placeholder{
+    color: white;
 }
